@@ -1,0 +1,9 @@
+{
+  "env": "production",
+  "logger": {
+    "consoleLogTags": ["crit", "error"]
+  },
+  "server": {
+    "host": "0.0.0.0"
+  }
+}

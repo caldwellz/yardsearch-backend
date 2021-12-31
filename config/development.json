@@ -1,0 +1,10 @@
+{
+  "env": "development",
+  "logger": {
+    "consoleLogTags": ["crit", "error", "warn", "info", "debug"]
+  },
+  "server": {
+    "host": "localhost",
+    "port": 18080
+  }
+}

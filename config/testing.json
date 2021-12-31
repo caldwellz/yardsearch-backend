@@ -1,0 +1,6 @@
+{
+  "env": "testing",
+  "logger": {
+    "consoleLogTags": ["crit"]
+  }
+}

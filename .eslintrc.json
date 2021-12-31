@@ -1,0 +1,56 @@
+{
+  "env": {
+    "commonjs": true,
+    "es2017": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:json/recommended-with-comments", // Occasionally JSON comments are useful...
+    "plugin:promise/recommended",
+    "plugin:node/recommended",
+    "semistandard"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "rules": {
+    // Recommend async/await since we're using Koa and targeting >= ES2017.
+    "promise/prefer-await-to-then": "warn",
+    "promise/prefer-await-to-callbacks": "warn",
+    "node/prefer-promises/dns": "warn",
+    "node/prefer-promises/fs": "warn",
+    // Ignore "missing" requires since we use module-alias, which ESLint can't currently grok.
+    "node/no-missing-require": "off",
+    "node/exports-style": [
+      "warn",
+      "module.exports",
+      {
+        "allowBatchAssign": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      // Test scripts use some extra globals
+      "files": "*.test.js",
+      "globals": {
+        // Mocha
+        "after": "readonly",
+        "afterAll": "readonly",
+        "afterEach": "readonly",
+        "before": "readonly",
+        "beforeAll": "readonly",
+        "beforeEach": "readonly",
+        "describe": "readonly",
+        "it": "readonly",
+        // Chai and other libraries
+        "assert": "readonly",
+        "expect": "readonly",
+        "request": "writable",
+        "sinon": "readonly",
+        "type": "readonly"
+      }
+    }
+  ]
+}

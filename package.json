@@ -1,0 +1,53 @@
+{
+  "name": "yardstats-backend",
+  "version": "0.0.1",
+  "description": "YardStats Backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development npx nodemon --inspect --throw-deprecation index.js",
+    "lint": "npx eslint --no-ignore --fix .",
+    "prepare": "npx husky install",
+    "test": "NODE_ENV=testing npx mocha --check-leaks --parallel test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caldwellz/yardstats-backend.git"
+  },
+  "author": "Zach Caldwell",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/caldwellz/yardstats-backend/issues"
+  },
+  "homepage": "https://github.com/caldwellz/yardstats-backend#readme",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "config": "^3.3.6",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-helmet": "^6.1.0",
+    "koa-response-time": "^2.1.0",
+    "module-alias": "^2.2.2",
+    "type-detect": "^4.0.8"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-semistandard": "^16.0.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.15",
+    "sinon": "^12.0.1",
+    "sinon-chai": "^3.7.0",
+    "supertest": "^6.1.6"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@api": "api",
+    "@lib": "lib",
+    "@tests": "tests"
+  }
+}

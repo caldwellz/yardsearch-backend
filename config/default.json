@@ -1,0 +1,27 @@
+{
+  "env": "default",
+  "logger": {
+    "consoleLogTags": ["crit", "error", "warn", "info"],
+    "highResolutionTime": false
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3000,
+    "proxy": true
+  },
+  "bodyParseOptions": {
+    // See https://github.com/koajs/koa-body for option descriptions
+    "jsonLimit": "4kb",
+    "formLimit": "2kb",
+    "textLimit": "2kb",
+    "multipart": false,
+    "json": true,
+    "jsonStrict": false,
+    "urlencoded": true,
+    "text": false,
+    "includeUnparsed": false,
+    "parsedMethods": [
+      "POST", "PUT", "PATCH"
+    ]
+  }
+}
