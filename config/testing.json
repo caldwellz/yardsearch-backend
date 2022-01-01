@@ -2,5 +2,8 @@
   "env": "testing",
   "logger": {
     "consoleLogTags": ["crit"]
+  },
+  "mongodb": {
+    "database": "yardstats-testing"
   }
 }

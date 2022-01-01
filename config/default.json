@@ -9,6 +9,16 @@
     "port": 3000,
     "proxy": true
   },
+  "mongodb": {
+    "database": "yardstats",
+    "connectTo": [
+      "localhost:27017"
+    ],
+    "options": {
+      "heartbeatFrequencyMS": 4000,
+      "serverSelectionTimeoutMS": 10000
+    }
+  },
   "bodyParseOptions": {
     // See https://github.com/koajs/koa-body for option descriptions
     "jsonLimit": "4kb",
