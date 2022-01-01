@@ -6,7 +6,7 @@ const supertest = require('supertest');
 describe('/api', () => {
   // Start the app and attach supertest to it, cleaning it up when done
   let server = {};
-  before(() => { server = app.listen(); });
+  before(async () => { await app.init(); server = app.listen(); });
   after(() => { server.close(); });
   beforeEach(() => { global.request = supertest(server); });
 
