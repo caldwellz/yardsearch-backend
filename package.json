@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "YardStats Backend",
   "main": "index.js",
+  "engines": {
+    "node": ">=12.9.0"
+  },
   "scripts": {
     "dev": "NODE_ENV=development npx nodemon --inspect --throw-deprecation index.js",
+    "ingest": "NODE_ENV=ingest node ingest.js",
     "lint": "npx eslint --no-ignore --fix .",
     "prepare": "npx husky install",
     "test": "NODE_ENV=testing npx mocha --check-leaks --parallel test.js"
@@ -48,6 +52,7 @@
   "_moduleAliases": {
     "@root": ".",
     "@api": "api",
+    "@ingest": "ingest",
     "@lib": "lib",
     "@models": "models",
     "@tests": "tests"

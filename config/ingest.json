@@ -1,0 +1,7 @@
+{
+    "env": "ingest",
+    "logger": {
+      "consoleLogTags": ["crit", "error", "warn", "info", "debug"]
+    }
+  }
+  
