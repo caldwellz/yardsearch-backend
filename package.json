@@ -49,6 +49,7 @@
     "@root": ".",
     "@api": "api",
     "@lib": "lib",
+    "@models": "models",
     "@tests": "tests"
   }
 }
