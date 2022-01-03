@@ -25,6 +25,8 @@
   "homepage": "https://github.com/caldwellz/yardstats-backend#readme",
   "dependencies": {
     "@koa/router": "^10.1.1",
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
     "config": "^3.3.6",
     "koa": "^2.13.4",
     "koa-body": "^4.2.0",
