@@ -29,6 +29,9 @@ const schema = new mongoose.Schema({
   vehiclesTotal: {
     type: Number
   },
+  vehicleModelCounts: {
+    type: Object
+  },
   failedLoaders: {
     type: Number
   },
