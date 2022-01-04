@@ -1,5 +1,5 @@
 'use strict';
 
 describe('/v1', () => {
-  require('./hello/hello.test');
+  require('./vehicles/vehicles.test');
 });

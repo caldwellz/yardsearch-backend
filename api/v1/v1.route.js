@@ -1,9 +1,20 @@
 'use strict';
 
-const path = '/v1';
-
 const Router = require('@koa/router');
-const router = new Router();
-const hello = require('./hello/hello.route');
-router.use(path, hello.routes(), hello.allowedMethods());
+const router = new Router({
+  // Current folder
+  prefix: '/v1'
+});
+
+// List subfolders here
+const subRoutes = [
+  'vehicles'
+];
+
+for (const routeName of subRoutes) {
+  const route = require(`./${routeName}/${routeName}.route`);
+  router.use(route.routes());
+  router.use(route.allowedMethods());
+}
+
 module.exports = router;
