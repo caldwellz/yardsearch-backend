@@ -33,7 +33,7 @@
   "overrides": [
     {
       // Test scripts use some extra globals
-      "files": "*.test.js",
+      "files": ["*.test.js", "*.mock.js"],
       "globals": {
         // Mocha
         "after": "readonly",
