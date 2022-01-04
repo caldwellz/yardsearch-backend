@@ -17,20 +17,14 @@ const schema = new mongoose.Schema({
   timeCompleted: {
     type: Date
   },
-  vehiclesFetched: {
-    type: Number
-  },
-  vehiclesAdded: {
-    type: Number
-  },
-  vehiclesUpdated: {
-    type: Number
-  },
-  vehiclesTotal: {
-    type: Number
-  },
-  vehicleModelCounts: {
-    type: Object
+  vehicleCounts: {
+    type: new mongoose.Schema({
+      fetched: Number,
+      added: Number,
+      updated: Number,
+      total: Number,
+      models: Object
+    })
   },
   failedLoaders: {
     type: Number

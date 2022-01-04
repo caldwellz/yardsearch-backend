@@ -8,15 +8,17 @@ const mockRecord = new IngestRecord({
   timeFetched: mockDate,
   timeValidated: mockDate,
   timeCompleted: mockDate,
-  vehiclesFetched: 3,
-  vehiclesAdded: 1,
-  vehiclesUpdated: 2,
-  vehiclesTotal: 4,
-  vehicleModelCounts: {
-    FAKEMAKE: {
-      'FAKE MODEL 1': 1,
-      'FAKE MODEL 2': 2
-    }
+  vehicleCounts: {
+    models: {
+      FAKEMAKE: {
+        'FAKE MODEL 1': 1,
+        'FAKE MODEL 2': 2
+      }
+    },
+    fetched: 3,
+    added: 1,
+    updated: 2,
+    total: 4
   },
   failedLoaders: 0,
   failedValidation: '[]',
