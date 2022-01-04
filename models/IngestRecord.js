@@ -19,7 +19,9 @@ const schema = new mongoose.Schema({
       added: Number,
       updated: Number,
       total: Number,
-      models: Object
+      models: Object,
+      yards: Object,
+      years: Object
     })
   },
   failedLoaders: {

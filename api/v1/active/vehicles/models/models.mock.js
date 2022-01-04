@@ -17,6 +17,14 @@ const mockRecord = new IngestRecord({
         'FAKE MODEL 2': 2
       }
     },
+    yards: [
+      'MOCK YARD',
+      'MOCK YARD 2'
+    ],
+    years: [
+      '1900',
+      '1901'
+    ],
     fetched: 3,
     added: 1,
     updated: 2,
