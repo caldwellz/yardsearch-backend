@@ -1,5 +1,5 @@
 'use strict';
 
 describe('/active', () => {
-  require('./models/models.test');
+  require('./vehicles/vehicles.test');
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-const path = '/api/v1/vehicles/active/models';
+const path = '/api/v1/active/vehicles/models';
 
 describe('/models', () => {
   require('./models.mock');
