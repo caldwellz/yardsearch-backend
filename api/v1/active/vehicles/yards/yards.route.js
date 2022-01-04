@@ -1,9 +1,9 @@
 'use strict';
 
-const logic = require('./models.logic');
+const logic = require('./yards.logic');
 const Router = require('@koa/router');
 const router = new Router({
-  prefix: '/models'
+  prefix: '/yards'
 });
 
 async function handler (ctx, next) {
