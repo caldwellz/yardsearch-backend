@@ -3,8 +3,6 @@
 const path = '/api/v1/active/vehicles/models';
 
 describe('/models', () => {
-  require('./models.mock');
-
   it('returns OK status', async () => {
     await request.get(path)
       .expect(200);
