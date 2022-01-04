@@ -9,7 +9,8 @@ const router = new Router({
 // List subfolders here
 const subRoutes = [
   'models',
-  'yards'
+  'yards',
+  'years'
 ];
 
 for (const routeName of subRoutes) {
