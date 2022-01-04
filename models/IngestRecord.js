@@ -5,17 +5,13 @@ const modelName = 'IngestRecord';
 const collectionName = 'ingests';
 
 const schema = new mongoose.Schema({
-  timeStarted: {
-    type: Date
-  },
-  timeFetched: {
-    type: Date
-  },
-  timeValidated: {
-    type: Date
-  },
-  timeCompleted: {
-    type: Date
+  timestamps: {
+    type: new mongoose.Schema({
+      started: Date,
+      fetched: Date,
+      validated: Date,
+      completed: Date
+    })
   },
   vehicleCounts: {
     type: new mongoose.Schema({

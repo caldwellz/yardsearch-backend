@@ -4,10 +4,12 @@ const IngestRecord = require('@models/IngestRecord');
 
 const mockDate = new Date();
 const mockRecord = new IngestRecord({
-  timeStarted: mockDate,
-  timeFetched: mockDate,
-  timeValidated: mockDate,
-  timeCompleted: mockDate,
+  timestamps: {
+    started: mockDate,
+    fetched: mockDate,
+    validated: mockDate,
+    completed: mockDate
+  },
   vehicleCounts: {
     models: {
       FAKEMAKE: {
