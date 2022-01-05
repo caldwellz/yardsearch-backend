@@ -2,7 +2,7 @@
 
 const path = '/api/v1/active/vehicles/years';
 
-describe('/yards', () => {
+describe('/years', () => {
   it('returns OK status', async () => {
     await request.get(path)
       .expect(200);
