@@ -3,13 +3,12 @@
 const Router = require('@koa/router');
 const router = new Router({
   // Current folder
-  prefix: '/v1'
+  prefix: '/vehicles'
 });
 
 // List subfolders here
 const subRoutes = [
-  'active',
-  'stats'
+
 ];
 
 for (const routeName of subRoutes) {
