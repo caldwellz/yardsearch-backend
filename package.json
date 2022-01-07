@@ -34,7 +34,8 @@
     "koa-response-time": "^2.1.0",
     "module-alias": "^2.2.2",
     "mongoose": "^6.1.4",
-    "type-detect": "^4.0.8"
+    "type-detect": "^4.0.8",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "chai": "^4.3.4",
