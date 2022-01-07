@@ -1,10 +1,10 @@
-# yardstats-backend
+# scrapsearch-backend
 
 [![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg)](https://github.com/standard/semistandard)
 
-Back-end implementation of [YardStats.tk](https://yardstats.tk/), an automotive junkyard search and statistics site, based on [Koa](https://koajs.com/) and [MongoDB](https://www.mongodb.com/try/download/community).
+Back-end implementation of [ScrapSearch.tk](https://scrapsearch.tk/), an automotive junkyard search and statistics site, based on [Koa](https://koajs.com/) and [MongoDB](https://www.mongodb.com/try/download/community).
 
-For the site's Vue-based front-end code, see [yardstats-frontend](https://github.com/caldwellz/yardstats-frontend).
+For the site's Vue-based front-end code, see [scrapsearch-frontend](https://github.com/caldwellz/scrapsearch-frontend).
 
 ## Installation &amp; Scripts
 

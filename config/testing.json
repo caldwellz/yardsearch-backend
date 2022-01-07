@@ -4,6 +4,6 @@
     "consoleLogTags": ["crit"]
   },
   "mongodb": {
-    "database": "yardstats-testing"
+    "database": "scrapsearch-testing"
   }
 }

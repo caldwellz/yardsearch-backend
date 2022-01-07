@@ -3,6 +3,7 @@
 
 const axios = require('axios').default;
 const cheerio = require('cheerio');
+const config = require('config');
 
 /* TODO: Do empty scrapes to get the makes available at each location, rather
    than assuming a specific make will be present to start with. */
@@ -51,7 +52,7 @@ async function fetchData (yard, make) {
     url: url,
     method: 'get',
     headers: {
-      'User-Agent': 'YardStats.tk data ingestor'
+      'User-Agent': config.get('ingest.userAgent')
     }
   });
   return response.data;

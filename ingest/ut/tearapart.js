@@ -2,6 +2,7 @@
 'use strict';
 
 const axios = require('axios').default;
+const config = require('config');
 
 function transformVehicles (data) {
   const vehicles = [];
@@ -39,7 +40,7 @@ async function fetchVehicles (nonce) {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Content-Length': query.length,
-        'User-Agent': 'YardStats.tk data ingestor'
+        'User-Agent': config.get('ingest.userAgent')
       }
     });
 
@@ -56,7 +57,7 @@ async function fetchNonce () {
     url: 'https://tearapart.com/used-auto-parts/inventory/',
     method: 'get',
     headers: {
-      'User-Agent': 'YardStats.tk data ingestor'
+      'User-Agent': config.get('ingest.userAgent')
     }
   });
   const page = response.data;
