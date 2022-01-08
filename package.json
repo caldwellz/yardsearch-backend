@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "YardSearch Backend",
   "main": "index.js",
+  "bin": {
+    "yardsearch": "./index.js",
+    "yardsearch-ingest": "./ingest.js"
+  },
   "engines": {
     "node": ">=12.9.0"
   },
