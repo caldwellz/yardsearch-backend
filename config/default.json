@@ -10,7 +10,7 @@
     "proxy": true
   },
   "mongodb": {
-    "database": "scrapsearch",
+    "database": "yardsearch",
     "connectTo": [
       "localhost:27017"
     ],
@@ -20,7 +20,7 @@
     }
   },
   "ingest": {
-    "userAgent": "ScrapSearch.tk data ingestor"
+    "userAgent": "YardSearch.tk data ingestor"
   },
   "bodyParseOptions": {
     // See https://github.com/koajs/koa-body for option descriptions

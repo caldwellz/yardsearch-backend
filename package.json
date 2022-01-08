@@ -1,7 +1,7 @@
 {
-  "name": "scrapsearch-backend",
+  "name": "yardsearch-backend",
   "version": "0.0.1",
-  "description": "ScrapSearch Backend",
+  "description": "YardSearch Backend",
   "main": "index.js",
   "engines": {
     "node": ">=12.9.0"
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caldwellz/scrapsearch-backend.git"
+    "url": "git+https://github.com/caldwellz/yardsearch-backend.git"
   },
   "author": "Zach Caldwell",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/caldwellz/scrapsearch-backend/issues"
+    "url": "https://github.com/caldwellz/yardsearch-backend/issues"
   },
-  "homepage": "https://github.com/caldwellz/scrapsearch-backend#readme",
+  "homepage": "https://github.com/caldwellz/yardsearch-backend#readme",
   "dependencies": {
     "@koa/router": "^10.1.1",
     "axios": "^0.24.0",
