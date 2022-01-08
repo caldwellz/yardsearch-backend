@@ -2,19 +2,19 @@
 
 const data = require('../vehicles.data');
 
-async function getIngestOn (date, fields) {
+// Select vehicles that were placed before, but active on or after the given date
+async function constructFilter (params) {
   const filter = {
-    'timestamp.started': { $lte: date }
+    lastSeen: { $gte: params.on },
+    placed: { $lte: params.on }
   };
-  const record = await data.getIngest(filter, fields);
-  return record;
+  return filter;
 }
 
-// Get the closest prior ingest record from the given date and add up its active vehicles
 async function getResults (params) {
-  const record = await getIngestOn(params.on, 'vehicleCounts.added vehicleCounts.updated');
+  const filter = await constructFilter(params);
   const res = {
-    count: record.vehicleCounts.added + record.vehicleCounts.updated,
+    count: await data.getVehicleCount(filter),
     on: params.on
   };
   return res;
